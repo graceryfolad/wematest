@@ -11,7 +11,7 @@ namespace wematest.Models
         public async Task<bool> SendOTP(string phonenumber, int custid)
         {
             Random rd = new Random();
-            int rand_num = rd.Next(100000, 99999);
+            int rand_num = rd.Next(100000, 999990);
 
             // store otp in db
 

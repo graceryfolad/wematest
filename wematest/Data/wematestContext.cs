@@ -72,7 +72,7 @@ namespace wematest.Data
                 entity.ToTable("lgas");
 
                 entity.Property(e => e.LgaId)
-                    .ValueGeneratedNever()
+                    
                     .HasColumnName("lga_id");
 
                 entity.Property(e => e.LgaName)
@@ -102,13 +102,12 @@ namespace wematest.Data
                     .HasColumnName("sta_name");
             });
 
+
             modelBuilder.Entity<Otp>(entity =>
             {
                 entity.ToTable("otps");
 
-                entity.Property(e => e.OtpId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("otp_id");
+                entity.Property(e => e.OtpId).HasColumnName("otp_id");
 
                 entity.Property(e => e.OptCreated)
                     .HasColumnType("datetime")

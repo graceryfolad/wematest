@@ -37,6 +37,7 @@ namespace wematest.Controllers
 
                     apiResponse.Result = result;
                     apiResponse.Status = MyConstants.HTTP_RESPONSE_STATUS_SUCCESS;
+                    apiResponse.Message = "Success";
                 }
                 else
                 {

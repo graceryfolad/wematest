@@ -48,7 +48,11 @@ namespace wematest.Models
                 {
                     if (await context.SaveChangesAsync() > 0)
                     {
-                        
+                        // send otp
+
+                        OTPModel model = new OTPModel();
+
+                        await model.SendOTP(customer.CustPhoneNumber, customer.CustId);
                         return aCustomer(customer.CustId);
                     }
                 }

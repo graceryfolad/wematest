@@ -11,6 +11,6 @@ namespace wematest.Data
         public int? OtpCustomer { get; set; }
         public string OptValue { get; set; }
         public DateTime? OptCreated { get; set; }
-        public int? OptStatus { get; set; }
+        public int OptStatus { get; set; }
     }
 }
